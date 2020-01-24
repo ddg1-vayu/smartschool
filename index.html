@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<HTML LANG = "EN-IN">
+	<HEAD>
+		<LINK REL = "shortcut icon" TYPE = "image/x-icon" HREF = "Red-Orb-Alphabet-S.ico">
+		<TITLE> The Smart School Initiative </TITLE>
+		<META CHARSET = "UTF-8">
+		<META NAME = "viewport" CONTENT = "width=device-width, initial-scale=1.0">
+		<LINK REL = "STYLESHEET" TYPE = "TEXT/CSS" HREF = "1.css">
+		<SCRIPT SRC = "show_hide_psw.js"></SCRIPT>
+	</HEAD>
+	<BODY ONLOAD = "frm.reset()">
+		<DIV ID = "main">
+			<CENTER>
+				<PARAM NAME = "movie" VALUE = "header.swf" />
+				<PARAM NAME = "quality" VALUE = "high" />
+				<PARAM NAME = "wmode" VALUE = "transparent" />
+				<EMBED SRC = "header.swf" NAME = "header" ALIGN = "middle" allowScriptAccess = "sameDomain" TYPE = "application/x-shockwave-flash" wmode = "transparent" />
+				<TABLE CLASS = "login" BORDER = "0" CELLPADDING = "5" CELLSPACING = "0" BACKGROUND = "form_bg.jpg">
+				<FORM NAME = "frm" METHOD = "POST" ACTION = "login.php">
+					<TR>
+						<TD> Username </TD>
+						<TD> 
+							<INPUT TYPE = "TEXT" NAME = "user" SIZE = "25" PLACEHOLDER = "Enter your Username" AUTOCOMPLETE = "ON" REQUIRED AUTOFOCUS>
+						</TD>
+					</TR>
+					<TR>
+						<TD> Password </TD>
+						<TD>
+							<INPUT TYPE = "PASSWORD" ID = "myPassword" NAME = "passcode" SIZE = "25" PLACEHOLDER = "Enter your Password" AUTOCOMPLETE = "OFF" REQUIRED ONMOUSEOVER = "mouseoverPass();" ONMOUSEOUT = "mouseoutPass();">
+						</TD>
+					</TR>
+					<TR>
+						<TD COLSPAN = "5" ALIGN = "CENTER">
+							<A HREF = "reset_psw.php" TARGET = "_blank"> <INPUT TYPE = "BUTTON" VALUE = "Change Password?" CLASS = "login-button"></A>
+							<INPUT TYPE = "SUBMIT" VALUE = "Login" NAME = "login" CLASS = "login-button">
+						</TD>
+					</TR>
+				</FORM>
+				</TABLE>
+			</CENTER>
+		</DIV>
+	</BODY>
+</HTML>
